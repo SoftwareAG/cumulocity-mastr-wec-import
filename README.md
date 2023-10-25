@@ -38,6 +38,11 @@ function processCSVFile() {
 
 ```
 
+## Configure your Cumulocity tenant
+
+[.env file](/.env)
+
 ## Run the srcipt
 
 `npm start`
+
