@@ -72,9 +72,6 @@
                         "id": "214573362"
                     },
                     {
-                        "id": "104433583"
-                    },
-                    {
                         "id": "494581380"
                     },
                     {
@@ -100,6 +97,9 @@
                     },
                     {
                         "id": "404626766"
+                    },
+                    {
+                        "id": "684573366"
                     }
                 ]
             },
@@ -237,26 +237,6 @@
         {
             "c8y_IsAssetProperty": {},
             "c8y_Global": {},
-            "id": "104433583",
-            "description": "Wind Turbine manufacturer",
-            "label": "Manufacturer",
-            "name": "manufacturer",
-            "type": "c8y_JsonSchema",
-            "c8y_JsonSchema": {
-                "type": "object",
-                "title": "Manufacturer",
-                "properties": {
-                    "manufacturer": {
-                        "type": "string"
-                    }
-                },
-                "required": [],
-                "key": "manufacturer"
-            }
-        },
-        {
-            "c8y_IsAssetProperty": {},
-            "c8y_Global": {},
             "id": "494581380",
             "description": "Model of Wind Turbine",
             "label": "Model",
@@ -313,7 +293,7 @@
                                 "type": "number",
                                 "title": "Longitude"
                             },
-                            "latitude": {
+                            "lat": {
                                 "type": "number",
                                 "title": "Latitude"
                             }
@@ -443,6 +423,26 @@
                 },
                 "required": [],
                 "key": "wec_IsOnshore"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "684573366",
+            "description": "Manufacturer of Wind Turbine",
+            "label": "Manufacturer",
+            "name": "wec_Manufacturer",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Manufacturer",
+                "properties": {
+                    "wec_Manufacturer": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_Manufacturer"
             }
         }
     ]
