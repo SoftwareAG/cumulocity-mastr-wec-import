@@ -56,7 +56,19 @@ function processCSVFile() {
 
 [.env file](/.env)
 
+## Import the Asset Model into Digital Twin Manager
+
+[Asset Model file](/assetmodel/Export-asset-models.json)
+
 ## Run the srcipt
 
 `npm start`
 
+## Result
+
+The script will create the assets and the hierarchy.
+
+
+![Cockpit 1](./doc/c8y-1.PNG)
+
+![Cockpit 2](./doc/c8y-2.PNG)
