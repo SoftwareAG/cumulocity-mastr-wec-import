@@ -1,0 +1,449 @@
+{
+    "assetModels": [
+        {
+            "c8y_IsAssetType": {
+                "allowedAssetTypes": [
+                    {
+                        "id": "784608454"
+                    }
+                ],
+                "isNoneChildAssetsAllowed": "false",
+                "icon": {
+                    "name": "location",
+                    "category": "location"
+                },
+                "properties": [
+                    {
+                        "id": "224573125"
+                    }
+                ]
+            },
+            "id": "384573124",
+            "label": "Territory",
+            "name": "territory",
+            "description": "",
+            "c8y_Global": {},
+            "depth": 0
+        },
+        {
+            "c8y_IsAssetType": {
+                "allowedAssetTypes": [
+                    {
+                        "id": "324581377"
+                    }
+                ],
+                "isNoneChildAssetsAllowed": "false",
+                "icon": {
+                    "name": "address",
+                    "category": "location"
+                },
+                "properties": [
+                    {
+                        "id": "224573125"
+                    }
+                ]
+            },
+            "id": "784608454",
+            "label": "Wind Farm",
+            "name": "windFarm",
+            "description": "A wind farm is a group of wind turbines in the same location.",
+            "c8y_Global": {},
+            "depth": 1
+        },
+        {
+            "c8y_IsAssetType": {
+                "allowedAssetTypes": [],
+                "isNoneChildAssetsAllowed": "false",
+                "icon": {
+                    "name": "fan",
+                    "category": "devicesAndSensors"
+                },
+                "properties": [
+                    {
+                        "id": "604433585"
+                    },
+                    {
+                        "id": "144573361"
+                    },
+                    {
+                        "id": "174627102"
+                    },
+                    {
+                        "id": "214573362"
+                    },
+                    {
+                        "id": "104433583"
+                    },
+                    {
+                        "id": "494581380"
+                    },
+                    {
+                        "id": "884627100"
+                    },
+                    {
+                        "id": "874573364"
+                    },
+                    {
+                        "id": "304573363"
+                    },
+                    {
+                        "id": "434433584"
+                    },
+                    {
+                        "id": "154627101"
+                    },
+                    {
+                        "id": "214581379"
+                    },
+                    {
+                        "id": "934627103"
+                    },
+                    {
+                        "id": "404626766"
+                    }
+                ]
+            },
+            "id": "324581377",
+            "label": "Wind Turbine",
+            "name": "windTurbine",
+            "description": "A wind turbine is a asset that converts the kinetic energy of wind into electrical energy.",
+            "c8y_Global": {},
+            "depth": 2
+        }
+    ],
+    "assetProperties": [
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "224573125",
+            "description": "Nominal Power in KW",
+            "label": "Nominal Power Total",
+            "name": "wec_NominalPowerTotal",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Nominal Power Total",
+                "properties": {
+                    "wec_NominalPowerTotal": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_NominalPowerTotal"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "604433585",
+            "description": "",
+            "label": "Address",
+            "name": "wec_Address",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Address",
+                "properties": {
+                    "wec_Address": {
+                        "type": "object",
+                        "properties": {
+                            "country": {
+                                "type": "string",
+                                "title": "Country"
+                            },
+                            "city": {
+                                "type": "string",
+                                "title": "City"
+                            },
+                            "cityCode": {
+                                "type": "string",
+                                "title": "City Code"
+                            },
+                            "street": {
+                                "type": "string",
+                                "title": "Street"
+                            },
+                            "territory": {
+                                "type": "string",
+                                "title": "Territory"
+                            }
+                        }
+                    }
+                },
+                "required": [],
+                "key": "wec_Address"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "144573361",
+            "description": "Commissioning date of wind turbine",
+            "label": "Commissioning Date",
+            "name": "wec_CommissioningDate",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Commissioning Date",
+                "properties": {
+                    "wec_CommissioningDate": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_CommissioningDate"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "174627102",
+            "description": "Grid Operator which is the Wind Turbine is connected to",
+            "label": "Grid Operator",
+            "name": "wec_GridOperator",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Grid Operator",
+                "properties": {
+                    "wec_GridOperator": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_GridOperator"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "214573362",
+            "description": "Hug Height in meter",
+            "label": "Hub Height",
+            "name": "wec_HubHeightM",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Hub Height",
+                "properties": {
+                    "wec_HubHeightM": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_HubHeightM"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "104433583",
+            "description": "Wind Turbine manufacturer",
+            "label": "Manufacturer",
+            "name": "manufacturer",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Manufacturer",
+                "properties": {
+                    "manufacturer": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "manufacturer"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "494581380",
+            "description": "Model of Wind Turbine",
+            "label": "Model",
+            "name": "wec_Model",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Model",
+                "properties": {
+                    "wec_Model": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_Model"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "884627100",
+            "description": "Nominal Power in KW",
+            "label": "Nominal Power",
+            "name": "wec_NominalPowerKW",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Nominal Power",
+                "properties": {
+                    "wec_NominalPowerKW": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_NominalPowerKW"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "874573364",
+            "description": "Geo location of Asset",
+            "label": "Position",
+            "name": "c8y_Position",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Position",
+                "properties": {
+                    "c8y_Position": {
+                        "type": "object",
+                        "properties": {
+                            "lng": {
+                                "type": "number",
+                                "title": "Longitude"
+                            },
+                            "latitude": {
+                                "type": "number",
+                                "title": "Latitude"
+                            }
+                        }
+                    }
+                },
+                "required": [],
+                "key": "c8y_Position"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "304573363",
+            "description": "Rotor Diameter in M",
+            "label": "Rotor Diameter",
+            "name": "wec_RotorDiameterM",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Rotor Diameter",
+                "properties": {
+                    "wec_RotorDiameterM": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_RotorDiameterM"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "434433584",
+            "description": "Serial Number of Wind Turbine",
+            "label": "Serial Number",
+            "name": "wec_Serial",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Serial Number",
+                "properties": {
+                    "wec_Serial": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_Serial"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "154627101",
+            "description": "Wind Farm of Wind Turbine",
+            "label": "Wind Farm",
+            "name": "wec_WindFarmName",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Wind Farm",
+                "properties": {
+                    "wec_WindFarmName": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_WindFarmName"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "214581379",
+            "description": "Wind Turbine Operator",
+            "label": "Wind Turbine Operator",
+            "name": "wec_Operator",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Wind Turbine Operator",
+                "properties": {
+                    "wec_Operator": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "key": "wec_Operator"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "934627103",
+            "description": "Is offshore wind turbine",
+            "label": "Offshore",
+            "name": "wec_IsOffshore",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Offshore",
+                "properties": {
+                    "wec_IsOffshore": {
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "key": "wec_IsOffshore"
+            }
+        },
+        {
+            "c8y_IsAssetProperty": {},
+            "c8y_Global": {},
+            "id": "404626766",
+            "description": "Is onshore wind turbine",
+            "label": "Onshore",
+            "name": "wec_IsOnshore",
+            "type": "c8y_JsonSchema",
+            "c8y_JsonSchema": {
+                "type": "object",
+                "title": "Onshore",
+                "properties": {
+                    "wec_IsOnshore": {
+                        "default": null,
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "key": "wec_IsOnshore"
+            }
+        }
+    ]
+}

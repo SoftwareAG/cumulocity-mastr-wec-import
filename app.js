@@ -38,7 +38,7 @@ c8y.initClient(c8yConnectionConf).then(result => {
 });
 
 function processCSVFile() {
-    fs.createReadStream('import/wec_sachsen_20231022.csv')
+    fs.createReadStream('import/wec_rostock_20231026.csv')
         .pipe(csv({ separator: customDelimiter }))
         .on('data', (row) => {
             //console.log(row);
@@ -59,14 +59,18 @@ function processCSVFile() {
             const manufacturerValue = row['Hersteller der Windenergieanlage'];
             const typeValue = row['Typenbezeichnung'];
             const operatorNameValue = row['Name des Anlagenbetreibers (nur Org.)'];
+            const locationOfWec = row['Lage der Einheit'];
+            const wec_GridOperator = row['Name des Anschluss-Netzbetreibers'];
 
             const wec = {
-                c8y_IsDevice: {},
+                c8y_IsAsset: {},
+                c8y_IsDeviceGroup: {},
                 wec_MaStRNr: mastNrValue,
+                wec_Serial: mastNrValue,
                 name: nameValue,
                 wec_NominalPowerKW: nominalPowerValue,
                 wec_CommissioningDate: commissioningDate,
-                c8y_Address: {
+                wec_Address: {
                     street: streetValue,
                     city: cityValue,
                     cityCode: cityCodeValue,
@@ -77,15 +81,16 @@ function processCSVFile() {
                     lat: latitudeValue,
                     lng: longitudeValue
                 },
-                c8y_Hardware: {
-                    model: typeValue
-                },
+                wec_Model: typeValue,
                 wec_WindFarmName: windFarmNameValue,
                 wec_HubHeightM: hubHeightValue,
                 wec_RotorDiameterM: rotorDiameterValue,
                 wec_Manufacturer: manufacturerValue,
                 type: "windTurbine",
-                wec_Operator: operatorNameValue
+                wec_Operator: operatorNameValue,
+                wec_GridOperator: wec_GridOperator,
+                wec_IsOnshore: "Windkraft an Land" === locationOfWec,
+                wec_IsOffshore: "Windkraft auf See" === locationOfWec      
             }
 
             putWindFarm(windFarmNameValue, territoryValue, nominalPowerValue);
